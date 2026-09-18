@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #07090e;
+    color: #cbd5e1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Manrope", Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Custom fonts pairing */
+.font-editorial {
+  font-family: 'EB Garamond', Georgia, serif;
+}
+
+.font-mono-system {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* SPECIFIED MESSAGE STYLES EXACT FROM SHEETS */
+.msg-neutral {
+  background: #151d2a;
+  border: 1px solid #29384e;
+  border-radius: 10px;
+  padding: 14px 16px;
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.msg-error {
+  background: #241416;
+  border-top: 1px solid #4a1d24;
+  border-right: 1px solid #4a1d24;
+  border-bottom: 1px solid #4a1d24;
+  border-left: 4px solid #b91c1c;
+  border-radius: 6px;
+  padding: 12px 16px;
+  color: #f87171;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.msg-warn {
+  background: #251d11;
+  border-top: 1px solid #4a3818;
+  border-right: 1px solid #4a3818;
+  border-bottom: 1px solid #4a3818;
+  border-left: 4px solid #d97706;
+  border-radius: 6px;
+  padding: 12px 16px;
+  color: #fbbf24;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #4f46e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-primary:hover:not(:disabled) {
+  background: #4338ca;
+}
+
+.btn-secondary {
+  background: #182030;
+  border: 1px solid #28354c;
+  color: #e2e8f0;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-secondary:hover:not(:disabled) {
+  background: #202b40;
+  border-color: #3b4d6e;
+}
+
+.btn-disabled {
+  opacity: 0.55 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+
+.btn-danger {
+  background: #241419;
+  border: 1px solid #4a2128;
+  color: #f87171;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-danger:hover:not(:disabled) {
+  background: #351720;
+  border-color: #6b2533;
+}
+
+/* FORM ELEMENTS */
+.form-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input-field {
+  width: 100%;
+  background: #07090e;
+  border: 1px solid #27354a;
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: #f8fafc;
+  font-size: 13px;
+  transition: border-color 0.15s ease;
+}
+.input-field:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.input-focus-indigo {
+  outline: 3px solid #6366f1 !important;
+  border-color: #6366f1 !important;
+}
+
+.input-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  background: #0c1017;
+}
+
+/* CONNECTION PILLS */
+.conn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.conn-pill-checking {
+  background: #1e293b;
+  border: 1px solid #475569;
+  color: #cbd5e1;
+}
+.conn-pill-checking .pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #94a3b8;
+  display: inline-block;
+}
+.conn-pill-failed {
+  background: #271417;
+  border: 1px solid #7f1d1d;
+  color: #f87171;
+}
+.conn-pill-failed .pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ef4444;
+  display: inline-block;
+}
+.conn-pill-connected {
+  background: #0f241a;
+  border: 1px solid #166534;
+  color: #4ade80;
+}
+.conn-pill-connected .pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  display: inline-block;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e283a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c3952;
+}

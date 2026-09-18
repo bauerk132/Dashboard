@@ -1,0 +1,6 @@
+{
+  "name": "Sovereign Life Dashboard",
+  "description": "Comprehensive Life & Operations Dashboard featuring Home, Tasks, Jobs Queue, AI Scoring & Budget, and the complete Sheet A, B, and C state validation matrices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
